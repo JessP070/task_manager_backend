@@ -6,4 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+management = Project.create(name: "management")
+
+event = Project.create(name: "event")
+
+
+Task.create(title: "Finish Taxes", deadline: "April 15, 2021", creator: "Jessica", status: false, project_id: management.id)
+
+Task.create(title: "Complete JS Project", deadline: "March 19, 2021", creator: "Sydney", status: true, project_id: event.id)
+
 
