@@ -2,6 +2,9 @@ class Api::V1::TasksController < ApplicationController
 
     def index 
         tasks = Task.all
+        options = {
+            include: [:project]
+        }
         render json: TaskSerializer.new(tasks)
     end
 
