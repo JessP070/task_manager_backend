@@ -4,6 +4,8 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.string :title
       t.date :deadline
       t.string :creator
+      t.boolean :status
+      t.integer :project_id
 
       t.timestamps
     end
