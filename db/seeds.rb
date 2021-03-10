@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+Project.destroy_all
+Task.destroy_all
+
 management = Project.create(name: "management")
 
 event = Project.create(name: "event")
